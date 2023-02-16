@@ -10,15 +10,18 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body, html {
+      height: 100%;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {position: fixed; bottom: 0; width: 100%;}
     .card {
       width: 18%;
       min-width: 300px;
-      height: 60%;
-      margin: auto;
-      margin-top: 10%;
-      margin-bottom: 10%;
+      height: fit-content;
+      /* margin: auto; */
+      /* margin-top: 10%; */
       background-color: white;
       display: flex;
       flex-direction: column;
@@ -37,6 +40,15 @@
     }
     body {
       background-color:  hsl(212, 45%, 89%);
+      height: 100%;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
     }
     p {
       font-size: 15px;
@@ -45,25 +57,28 @@
       color: hsl(220, 15%, 55%);
     }
     h3 {
+      font-size: 23px;
       font-weight: 700;
       font-family: 'Outfit';
       color: hsl(218, 44%, 22%);
     }
     .text {
       margin: auto;
-      width: 90%;
+      width: 85%;
       margin-bottom: 8%;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="images/image-qr-code.png" alt="qrcode">
-    <div class="text">
-      <h3>Improve your front-end skills by building projects</h3>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  <div class="container">
+    <div class="card">
+      <img src="images/image-qr-code.png" alt="qrcode">
+      <div class="text">
+        <h3>Improve your front-end skills by building projects</h3>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
     </div>
-    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Mohamed Ashraf</a>.
